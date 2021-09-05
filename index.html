@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <!-- main calculator box -->
+    <div class="calculator">
+        <!-- output box -->
+        <div class="calculator__output">
+            <div class="calculator__output__accumulator"></div>
+            <div class="calculator__output__total"></div>
+        </div>
+         <!-- for input -->
+        <div class="calculator__input">
+             <!-- for buttons of calculator -->
+            <div class="calculator__input__btn" onclick="clearCalculator()">AC</div>
+            <div class="calculator__input__btn">Del</div>
+            <div class="calculator__input__btn">%</div>
+            <div class="calculator__input__btn calculator__input__btn--operator" onclick="operatorPressed('/')">/</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('7')">7</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('8')">8</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('9')">9</div>
+            <div class="calculator__input__btn calculator__input__btn--operator" onclick="operatorPressed('*')">*</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('4')">4</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('5')">5</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('6')">6</div>
+            <div class="calculator__input__btn calculator__input__btn--operator" onclick="operatorPressed('-')">-</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('1')">1</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('2')">2</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('3')">3</div>
+            <div class="calculator__input__btn calculator__input__btn--operator" onclick="operatorPressed('+')">+</div>
+            <div class="calculator__input__btn">FS</div>
+            <div class="calculator__input__btn" onclick="digitsPressed('0')">0</div>
+            <div class="calculator__input__btn">.</div>
+            <div class="calculator__input__btn" id="equalBtn" onclick="equalPressed()">=</div>
+        </div> 
+    </div>
+    <script src="calculator.js"></script>    
+</body>
+</html
